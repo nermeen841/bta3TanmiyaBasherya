@@ -10,7 +10,7 @@ ThemeData theme() {
     iconTheme: IconThemeData(color: inActiveIconColor),
     fontFamily: "Cairo",
     appBarTheme: appBarTheme(),
-    textTheme: textTheme(),
+    // textTheme: textTheme(),
     inputDecorationTheme: inputDecorationTheme(),
     visualDensity: VisualDensity.adaptivePlatformDensity,
   );
@@ -35,12 +35,12 @@ InputDecorationTheme inputDecorationTheme() {
   );
 }
 
-TextTheme textTheme() {
-  return TextTheme(
-      // bodyText1: TextStyle(color: kTextColor),
-      // bodyText2: TextStyle(color: kTextColor),
-      );
-}
+// TextTheme textTheme() {
+//   return TextTheme(
+//       // bodyText1: TextStyle(color: kTextColor),
+//       // bodyText2: TextStyle(color: kTextColor),
+//       );
+// }
 
 AppBarTheme appBarTheme() {
   return AppBarTheme(
