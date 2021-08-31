@@ -2,6 +2,7 @@ import 'package:bta3_tanmya/Componnent/components/constants.dart';
 import 'package:bta3_tanmya/Screens/profile/profileScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:share/share.dart';
 
 class HeaderTxt extends StatelessWidget {
   final String title;
@@ -94,7 +95,11 @@ class HeaderTxt extends StatelessWidget {
                         )),
                     spaceW(15),
                     InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Share.share(
+                              'check out my website https://example.com',
+                              subject: 'Look what I made!');
+                        },
                         child: Icon(
                           Icons.share,
                           color: HexColor("#898A8D"),

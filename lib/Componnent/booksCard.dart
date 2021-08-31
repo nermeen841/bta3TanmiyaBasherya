@@ -2,6 +2,7 @@ import 'package:bta3_tanmya/Componnent/components/constants.dart';
 import 'package:bta3_tanmya/Screens/profile/profileScreen.dart';
 import 'package:flutter/material.dart';
 import 'downloadButton.dart';
+import 'package:share/share.dart';
 
 class BooksCard extends StatelessWidget {
   final String articleTitle;
@@ -92,7 +93,11 @@ class BooksCard extends StatelessWidget {
                           ),
                           spaceW(10),
                           InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Share.share(
+                                  'check out my website https://example.com',
+                                  subject: 'Look what I made!');
+                            },
                             child: Icon(
                               Icons.share,
                               color: HexColor("#898A8D"),

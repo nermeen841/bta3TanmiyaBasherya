@@ -1,3 +1,4 @@
+import 'package:bta3_tanmya/Componnent/pdfReader_test.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -9,7 +10,8 @@ class ReadOnlineButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () => Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => PDFReaderPage())),
       child: Row(
         textDirection: TextDirection.rtl,
         children: [

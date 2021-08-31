@@ -1,6 +1,7 @@
 import 'package:bta3_tanmya/Componnent/components/constants.dart';
 import 'package:bta3_tanmya/Screens/videoDetail/videoDetail_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:share/share.dart';
 
 class LecturesGrid extends StatelessWidget {
   const LecturesGrid({Key? key}) : super(key: key);
@@ -50,7 +51,11 @@ class LecturesGrid extends StatelessWidget {
                             Row(
                               children: [
                                 InkWell(
-                                  onTap: () {},
+                                  onTap: () {
+                                    Share.share(
+                                        'check out my website https://example.com',
+                                        subject: 'Look what I made!');
+                                  },
                                   child: Icon(Icons.share),
                                 ),
                                 spaceW(10),
